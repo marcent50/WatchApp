@@ -19,7 +19,7 @@ class App extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     console.log("Inside ShouldComponentUpdate");
     if (
-      nextState.currentPreviewImagePos === this.state.currentPreviewImagePos ||
+      nextState.currentPreviewImagePos === this.state.currentPreviewImagePos &&
       nextState.currentSelectedFeature === this.state.currentSelectedFeature
     ) {
       return false;
